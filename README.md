@@ -7,7 +7,7 @@ The following is a template you must copy when creating a 2D project in the vide
 1. Copy the repository template by clicking the "Use This Template" button at the top-right corner of this page
 2. Share this repository with anyone working on the project with you
 3. Clone the new repository to your computer (repeat this step for each computer you're using)
-4. Open Unity Hub on your computer and install Unity 2022.1.22f1
+4. Open Unity Hub on your computer and install Unity 6000.27f.1
 5. Click the "Open" button at the top-right of Unity Hub and select the "2D-Template" folder inside the cloned repository
 6. Do whatever you'd like with the project!
 7. Stage your changes to the repository
