@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 7c03d09d1e28c0445a0be1e2f2212a26
+guid: 4566fa94706bca74c9c5b702732cd659
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7441063808967974531
-    second: Cliff_Tile_0
+      213: 1216875044580472753
+    second: WalkingRightKnight_0
+  - first:
+      213: -7196412996024055760
+    second: WalkingRightKnight_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cliff_Tile_0
+      name: WalkingRightKnight_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 48
-        height: 96
+        x: 7
+        y: 99
+        width: 90
+        height: 93
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +144,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d71e273e3e70cb890800000000000000
-      internalID: -7441063808967974531
+      spriteID: 1b7b140e76533e010800000000000000
+      internalID: 1216875044580472753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingRightKnight_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 88
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0384bf22284312c90800000000000000
+      internalID: -7196412996024055760
       vertices: []
       indices: 
       edges: []
@@ -161,7 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cliff_Tile_0: -7441063808967974531
+      WalkingRightKnight_0: 1216875044580472753
+      WalkingRightKnight_1: -7196412996024055760
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
