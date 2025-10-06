@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: e8b1442de4dd7b048a50299c75547dfe
+guid: 61b8c2fcead8d0b42b9994f6f95dad1b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6449133468155798188
-    second: SmallKnight_0
+      213: 1353279475087261854
+    second: SmallKnightBackward_0
   - first:
-      213: 5939632998199744854
-    second: SmallKnight_1
+      213: 7500362262937672092
+    second: SmallKnightBackward_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SmallKnight_0
+      name: SmallKnightBackward_0
       rect:
         serializedVersion: 2
         x: 17
@@ -144,14 +144,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca2628668bcef7950800000000000000
-      internalID: 6449133468155798188
+      spriteID: e90476a3380d7c210800000000000000
+      internalID: 1353279475087261854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SmallKnight_1
+      name: SmallKnightBackward_1
       rect:
         serializedVersion: 2
         x: 17
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 65952e90eb0dd6250800000000000000
-      internalID: 5939632998199744854
+      spriteID: c9915215db3a61860800000000000000
+      internalID: 7500362262937672092
       vertices: []
       indices: 
       edges: []
@@ -186,8 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SmallKnight_0: 6449133468155798188
-      SmallKnight_1: 5939632998199744854
+      SmallKnightBackward_0: 1353279475087261854
+      SmallKnightBackward_1: 7500362262937672092
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
