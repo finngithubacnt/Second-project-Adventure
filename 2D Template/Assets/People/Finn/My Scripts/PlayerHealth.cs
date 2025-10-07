@@ -12,6 +12,6 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        gameObject.GetComponentInChildren<UnityEngine.UI.Slider>().value = Phealth;
     }
 }
