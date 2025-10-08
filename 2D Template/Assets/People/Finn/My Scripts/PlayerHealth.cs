@@ -1,17 +1,19 @@
 using UnityEngine;
+using UnityEngine.Timeline;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public float MaxHealthset;
     public float Phealth = 10;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        Phealth = 10;
-    }
 
-    // Update is called once per frame
+    [System.Obsolete]
+    private void Awake(bool Hp)
+    {
+        MaxHealthset = FindObjectOfType<MHP>(Hp);
+    }
     void Update()
     {
+        
         gameObject.GetComponentInChildren<UnityEngine.UI.Slider>().value = Phealth;
     }
 }
