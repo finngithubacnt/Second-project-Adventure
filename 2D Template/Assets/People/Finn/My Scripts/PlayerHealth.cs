@@ -4,12 +4,18 @@ using UnityEngine.Timeline;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float MaxHealthset;
+    public float MaxHealth = 10;
     public float Phealth = 10;
+    
+    public void Start()
+    {
+        Phealth = 10;
+    }
+
     void Update()
     {
 
-        GetComponent<MHP>().HpNum = MaxHealthset;
+        GetComponent<MHP>().HpNum = MaxHealth;
         gameObject.GetComponentInChildren<UnityEngine.UI.Slider>().value = Phealth;
     }
 }
