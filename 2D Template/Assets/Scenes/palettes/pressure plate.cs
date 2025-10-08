@@ -8,7 +8,7 @@ public class pressure_plate : MonoBehaviour
 {
     public GameObject door;
     private Animator anim;
-    private bool isOpen = false;
+    public bool isOpen = false;
 
     public UnityEvent onPlatePressed;
 
