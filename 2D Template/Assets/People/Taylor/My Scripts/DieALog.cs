@@ -1,39 +1,19 @@
 using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
-using TMPro;
-public class NewMonoBehaviourScript : MonoBehaviour
+using System;
+
+[Serializable]
+public struct DialoguePiece
 {
-    public TextMeshProUGUI textDisplay;
-    public string[] sentences;
-    public float typingSpeed;
+    public string name;
+    [TextArea] public string dialogue;
+}
+public class DieALog : MonoBehaviour
+{
+   public List<DialoguePiece> dialogue;
 
-    private int index;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void StartDialogue()
     {
-        textDisplay.text = string.Empty;
-        StartDialogue();
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void StartDialogue()
-    {
-        index = 0;
-        StartCoroutine(TypeLine());
-    }
-
-    IEnumerator TypeLine()
-    {
-        foreach (char letter in sentences[index].ToCharArray())
-        {
-            textDisplay.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
-        }
     }
 }
