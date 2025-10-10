@@ -15,12 +15,10 @@ public class DieALog : MonoBehaviour
  
     public TMPro.TMP_Text dialogueName;
     public TMPro.TMP_Text dialogueText;
-     
+
     public void StartDialogue()
     {
-        gameObject.SetActive(true); 
-
-        dialogueName.SetText("bro");
+       dialogueName.SetText("bro");
        dialogueText.SetText("bro please work bro plese");
     }
 }
