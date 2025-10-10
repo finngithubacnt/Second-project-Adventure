@@ -3,7 +3,6 @@ using UnityEngine.InputSystem;
 
 public class Interact : MonoBehaviour
 {
-
     public Vector2 boxSize;
     public LayerMask boxLayer;
 
@@ -14,14 +13,9 @@ public class Interact : MonoBehaviour
 
         RaycastHit2D hit = Physics2D.BoxCast(transform.position, boxSize, 0, Vector2.zero, 1, boxLayer);
 
-        if (hit)
-        {
-            Debug.Log(hit.collider.gameObject.name);
+        if (hit && hit.collider.TryGetComponent(out Interactable interactable))
+        { 
+            interactable.onInteract.Invoke();
         }
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireCube(transform.position, new Vector2(1.5f, 1.5f));
     }
 }
