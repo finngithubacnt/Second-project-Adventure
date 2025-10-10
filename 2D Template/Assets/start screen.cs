@@ -17,9 +17,14 @@ public class startscreen : MonoBehaviour
 
     public void swapSceens()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Main");
     }
 
 
+    public void QuitButton()
+    {
+        Debug.Log("Quit the game!");
+        Application.Quit();
 
+    }
 }
