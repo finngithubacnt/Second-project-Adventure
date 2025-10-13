@@ -25,16 +25,20 @@ public class DieALog : MonoBehaviour
         gameObject.SetActive(true);
 
         StartCoroutine(WriteDialoguePiece(dialogue[0]));
+
+        Debug.Log("yes, hsa started");
     }
 
     public void StopDialogue()
     {
-        gameObject.SetActive(false);
+       gameObject.SetActive(false);
     }
 
     public void NextDialogueOrStop()
     {
-        ++dialogueIndex; 
+      ++dialogueIndex;
+    
+        Debug.Log("BRO PLEASEEEEEEEE");
 
         if (dialogueIndex >= dialogue.Count)
         {
@@ -44,12 +48,15 @@ public class DieALog : MonoBehaviour
         StartCoroutine(WriteDialoguePiece(dialogue[dialogueIndex]));
     }
 
+
     public IEnumerator WriteDialoguePiece(DialoguePiece dialogue)
     {
         dialogueName.SetText(dialogue.name);
-       
-        for(int i = 0; i < dialogue.dialogue.Length; ++i)
+        dialogueText.text = "";
+
+        for (int i = 0; i < dialogue.dialogue.Length; ++i)
         {
+
             dialogueText.text += dialogue.dialogue[i];
              yield return new WaitForSeconds(textSpeed);
         }
