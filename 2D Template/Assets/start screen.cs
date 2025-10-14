@@ -18,6 +18,7 @@ public class startscreen : MonoBehaviour
     public void swapSceens()
     {
         SceneManager.LoadScene("Main");
+        Debug.Log("Swapping Scenes");
     }
 
 
