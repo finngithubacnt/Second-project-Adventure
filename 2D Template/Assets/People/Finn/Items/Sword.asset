@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01def4d4db87f674aa28849c06f23160, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  tile: {fileID: 0}
   type: 0
   actionType: 0
   range: {x: 5, y: 4}
-  stackable: 1
-  maxStack: 20
+  stackable: 0
+  maxStack: 1
   image: {fileID: 0}

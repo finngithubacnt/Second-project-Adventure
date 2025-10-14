@@ -89,6 +89,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d60b19338c18d9f4bbcf389567b8c375, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  image: {fileID: 2315537060398251333}
+  selectedColor: {r: 1, g: 0, b: 0, a: 0.42745098}
+  notSelectedColor: {r: 1, g: 1, b: 1, a: 0.5803922}
 --- !u!114 &5954045143080787076
 MonoBehaviour:
   m_ObjectHideFlags: 0

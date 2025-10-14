@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 429929341144115260}
   - component: {fileID: 7997351624782989509}
   m_Layer: 0
-  m_Name: InventoryItem
+  m_Name: Sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90,8 +90,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 429929341144115260}
   countText: {fileID: 0}
+  Methodname: Action2
   item: {fileID: 0}
   count: 1
   parentAfterDrag: {fileID: 0}
   randomScripts:
-  - {fileID: 0}
+  - {fileID: 202718016518038405, guid: 55c4992aefe632f4ba8f674c32e1714e, type: 3}

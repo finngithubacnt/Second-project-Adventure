@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class FullCombat : MonoBehaviour
 {
-    public bool SwordEquipped = false;
-    public bool bowEquipped = false;
+    public bool SwordEquipped;
+    public bool bowEquipped;
+    public bool Bow1Equipped;
     public Animator animator;
     public GameObject ArrowPrefab;
-    public Transform  firePoint;
+    public Transform firePoint;
     public GameObject Sword;
     public GameObject Bow;
     public GameObject Bow1;//drawn bow
@@ -16,27 +17,32 @@ public class FullCombat : MonoBehaviour
     {
         
     }
-
+    public void SwordMethod()
+    {
+        Debug.Log("Got Sword");
+        SwordEquipped = true;
+        bowEquipped = false;
+        Bow1Equipped = false;
+        Sword.SetActive(SwordEquipped);
+    }
+    public void BowMethod()
+    {
+        Debug.Log("Got Bow");
+        SwordEquipped = false;
+        bowEquipped = true;
+        Bow1Equipped = false;
+        Bow.SetActive(bowEquipped);
+    }
     // Update is called once per frame
     void Update()
     {
-        if (SwordEquipped == true)
-        {
-            Sword.SetActive(true);
-        }
-        if (bowEquipped == true)
-        {
-            Bow.SetActive(true);
-        }
+        Sword.SetActive(SwordEquipped);
+        Bow.SetActive(bowEquipped);
+
         if (SwordEquipped == true & Input.GetKeyDown(KeyCode.Mouse0))
         {
             animator.Play("sword");
-            Sword.SetActive(true);
             // Attack with sword
-        }
-        else if (SwordEquipped == false)
-        {
-            Sword.SetActive(false);
         }
         if (bowEquipped == true & Input.GetKeyDown(KeyCode.Mouse0))
         {
@@ -51,19 +57,15 @@ public class FullCombat : MonoBehaviour
         }
 
 
+    }
+    public void Enable()
+    {
+        Bow1.SetActive(true);
+    }
 
+    public void Disable()
+    {
+        Bow1.SetActive(false);
 
-
-        if (SwordEquipped == true)
-        {
-            gameObject.SetActive(SwordEquipped);
-            // Attack with sword
-        }
-        if (bowEquipped == true)
-        {
-          
-            gameObject.SetActive(bowEquipped);
-            //Attack With Bow
-        }
     }
 }
