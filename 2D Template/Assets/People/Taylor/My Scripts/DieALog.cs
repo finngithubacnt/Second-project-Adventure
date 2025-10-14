@@ -2,6 +2,8 @@ using UnityEngine;
 using System.Collections.Generic;
 using System;
 using System.Collections;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 [Serializable]
 public struct DialoguePiece
@@ -19,26 +21,28 @@ public class DieALog : MonoBehaviour
     public TMPro.TMP_Text dialogueText;
 
     private int dialogueIndex;
-
+    private bool isDialogueRunning;
+    
     public void StartDialogue()
     {
         gameObject.SetActive(true);
+        dialogueIndex = 0;
 
         StartCoroutine(WriteDialoguePiece(dialogue[0]));
-
-        Debug.Log("yes, hsa started");
     }
 
     public void StopDialogue()
     {
+       SceneManager.LoadScene("Scene3");
        gameObject.SetActive(false);
     }
 
-    public void NextDialogueOrStop()
+    public void NextDialogueOrStop(InputAction.CallbackContext ctx)
     {
-      ++dialogueIndex;
-    
-        Debug.Log("BRO PLEASEEEEEEEE");
+        if (ctx.ReadValue<float>() == 0 || isDialogueRunning)
+            return;
+
+        ++dialogueIndex;
 
         if (dialogueIndex >= dialogue.Count)
         {
@@ -54,11 +58,15 @@ public class DieALog : MonoBehaviour
         dialogueName.SetText(dialogue.name);
         dialogueText.text = "";
 
+        isDialogueRunning = true;
+
         for (int i = 0; i < dialogue.dialogue.Length; ++i)
         {
 
             dialogueText.text += dialogue.dialogue[i];
              yield return new WaitForSeconds(textSpeed);
         }
+
+        isDialogueRunning = false;
     }
 }
