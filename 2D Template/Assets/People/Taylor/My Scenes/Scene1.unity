@@ -167,12 +167,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - name: wizard
-    dialogue: yo. bro. this is just a test to see if the dialogue is working.
-  - name: me
-    dialogue: okay. cool.
-  - name: wizard
-    dialogue: yup. cool indded.
+  - name: Wizard
+    dialogue: Hey, did you see who ate the last of the Minecraft cereal?
+  - name: You
+    dialogue: ...
+  - name: Wizard
+    dialogue: It's just that I've really been craving that cereal all week and now
+      that I'm finally ready... well...
+  - name: You
+    dialogue: It was on the counter so I just put it down the hatch. Shall I run
+      to the market to gather more?
+  - name: Wizard
+    dialogue: Later won't work, but that's alright. I recently learned a spell to
+      reverse time on certain objects. Here, check this out.
+  - name: '*loud bang*'
+    dialogue: Your head throbs. You feel dizzy.
+  - name: You
+    dialogue: Waddaheck happened?
   textSpeed: 0.05
   dialogueName: {fileID: 1929022852}
   dialogueText: {fileID: 1430415117}
@@ -566,7 +577,7 @@ MonoBehaviour:
       - m_Target: {fileID: 279794330}
         m_TargetAssemblyTypeName: DieALog, Assembly-CSharp
         m_MethodName: NextDialogueOrStop
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -590,7 +601,7 @@ MonoBehaviour:
       - m_Target: {fileID: 279794330}
         m_TargetAssemblyTypeName: DieALog, Assembly-CSharp
         m_MethodName: NextDialogueOrStop
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -660,8 +671,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 665, y: -218}
-  m_SizeDelta: {x: 1628.516, y: 209.614}
+  m_AnchoredPosition: {x: 521.978, y: -159.99113}
+  m_SizeDelta: {x: 1390.8888, y: 156.4386}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1430415117
 MonoBehaviour:
@@ -1087,6 +1098,7 @@ GameObject:
   - component: {fileID: 2035078495}
   - component: {fileID: 2035078494}
   - component: {fileID: 2035078497}
+  - component: {fileID: 2035078498}
   m_Layer: 6
   m_Name: NPC
   m_TagString: Untagged
@@ -1132,7 +1144,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.62, y: 1.01}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1163,7 +1175,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1184,7 +1196,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -3745139486648291273, guid: c0235c7fcc51e954a8f6db343045e566, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1204,8 +1216,8 @@ Transform:
   m_GameObject: {fileID: 2035078492}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.96, y: 5.74, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 5.6157, y: 5.69, z: 0}
+  m_LocalScale: {x: 4.1496253, y: 2.9646993, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1237,6 +1249,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!95 &2035078498
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035078492}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7b66d666a17f0d44da1c2f710aafa01f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
