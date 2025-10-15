@@ -558,11 +558,11 @@ GameObject:
   - component: {fileID: 7913538901236311669}
   - component: {fileID: 4831472143990668305}
   - component: {fileID: 7900633347165568164}
-  - component: {fileID: 6625731175934906045}
   - component: {fileID: 1601320645886413659}
   - component: {fileID: 7792940323943981040}
   - component: {fileID: 5358678769867277872}
   - component: {fileID: 4866176064237385415}
+  - component: {fileID: 4606939429874624537}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -656,20 +656,6 @@ MonoBehaviour:
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
   constrainInsideGraph: 0
---- !u!114 &6625731175934906045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6637594811572661082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 1
-  target: {fileID: 0}
 --- !u!114 &1601320645886413659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -684,6 +670,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDead: 0
   Ehealth: 10
+  me: {fileID: 0}
+  isAttacking: 0
+  player: {fileID: 0}
 --- !u!58 &7792940323943981040
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -761,6 +750,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delayTime: 0.1
   delay: 0
+--- !u!114 &4606939429874624537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6637594811572661082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22e6c29e32504465faa943c537d8029b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  targets:
+  - {fileID: 2799543646192388214, guid: fee03104564541e4880c4f0b86cc1b4e, type: 3}
+  delay: 3.04
 --- !u!1 &8033181040086413523
 GameObject:
   m_ObjectHideFlags: 0

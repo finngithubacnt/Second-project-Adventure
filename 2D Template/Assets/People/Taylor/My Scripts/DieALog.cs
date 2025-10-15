@@ -33,7 +33,7 @@ public class DieALog : MonoBehaviour
 
     public void StopDialogue()
     {
-       SceneManager.LoadScene("Scene3");
+       SceneManager.LoadScene("Main");
        gameObject.SetActive(false);
     }
 

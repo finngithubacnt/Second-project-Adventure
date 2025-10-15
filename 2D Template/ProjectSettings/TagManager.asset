@@ -3,17 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - notplayer
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - A*
+  - Ignore Raycast
   - Water
   - UI
+  - UI
   - Interactable
-  - 
-  - 
+  - above
   - 
   - 
   - 
@@ -40,6 +41,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: above
+    uniqueID: 2948888421
     locked: 0
   m_RenderingLayers:
   - Default
