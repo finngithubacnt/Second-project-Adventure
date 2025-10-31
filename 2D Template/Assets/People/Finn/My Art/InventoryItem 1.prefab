@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3552444961016091945}
   - component: {fileID: 429929341144115260}
   - component: {fileID: 7997351624782989509}
+  - component: {fileID: 8973502619836099304}
   m_Layer: 0
   m_Name: InventoryItem 1
   m_TagString: Untagged
@@ -89,3 +90,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 0}
+  countText: {fileID: 0}
+  Methodname: Action1
+  item: {fileID: 0}
+  count: 1
+  parentAfterDrag: {fileID: 0}
+  randomScripts: []
+--- !u!114 &8973502619836099304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420034880205486925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03fa2fe89a7cd794d9f1940299e12d80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAttacking: 0

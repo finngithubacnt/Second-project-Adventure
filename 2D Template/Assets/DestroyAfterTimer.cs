@@ -5,10 +5,9 @@ public class DestroyAfterTimer : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        t
     }
 
-    // Update is called once per frame
     void Update()
     {
         

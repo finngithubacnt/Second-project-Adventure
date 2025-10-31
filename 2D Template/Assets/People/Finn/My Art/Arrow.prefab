@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 060ca70037740704e991ba35f3b979f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ArrowSpeed: 20
+  ArrowSpeed: 633.4
 --- !u!114 &4333036166005278524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,8 +124,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.047946427, y: -0.007991082}
-  m_Size: {x: 2.034279, y: 0.5914372}
+  m_Offset: {x: 0.020615818, y: -0.00018245229}
+  m_Size: {x: 1.8546815, y: 0.3103251}
   m_Direction: 1
 --- !u!114 &954162015316521540
 MonoBehaviour:
